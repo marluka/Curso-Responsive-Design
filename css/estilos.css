@@ -361,6 +361,24 @@ h2 {
   height: auto;
 }
 
+.youtube-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.flexible-video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* h*100 / w */
+  background: blue;
+  position: relative;
+}
+
 @media screen and (max-width: 767px) {
   .header {
     display: block;
