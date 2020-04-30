@@ -360,6 +360,45 @@ h2 {
   flex-wrap: inherit;
 }
 
+.html-video {
+  width: 100%;
+  height: auto;
+}
+
+.youtube-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.flexible-video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%; /* h*100 / w */
+  background: blue;
+  position: relative;
+}
+
+.burger-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  /* (rojo 0-255, verde 0-255, azul 0-255, opacidad 0-1) */
+  background-color: rgba(0, 0, 0, 0.8);
+  display: none;
+  line-height: 40px;
+  text-align: center;
+  position: fixed;
+  z-index: 4;
+  left: 5px;
+  top: 5px;
+  color: white;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     padding: 0 1em;
@@ -388,30 +427,11 @@ h2 {
   }
 }
 
-.html-video {
-  width: 100%;
-  height: auto;
-}
-
-.youtube-video {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-
-.flexible-video {
-  width: 100%;
-  height: 0;
-  padding-top: 56.25%; /* h*100 / w */
-  background: blue;
-  position: relative;
-}
-
 @media screen and (max-width: 767px) {
+  .burger-button {
+    display: block;
+  }
+
   .header {
     display: block;
     height: auto;
